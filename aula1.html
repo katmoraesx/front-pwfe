@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1</title>
+</head>
+<body>
+    <h1> Minha primeira página em JS</h1>
+    <script>
+        // Alert - Chamo a atenção do meu usuário, obrigando a aceitar o que eu desejo! "Ok"
+        // Boas práticas, é interessante colocar o caminho do comando que deseja, porém depois do ecma 18, não se faz obrigatório.
+
+        window.alert("Olá mundo, estou quebrando uma maldição!"); //ponto e vírgula não é obrigatório
+        alert("Eu estava com saudades!")
+
+        // Prompt, é como o input do python, premite que meu usuário insira um valor
+        let materia_favorita = window.prompt("Qual é a sua matéria preferida?")
+
+        // Confirm : Apresenta dois botões, o de "ok" e o de "cancelar"
+        confirm("Você adora JavaScript, né?")
+
+        // Variáveis: let (flexível durante o codigo)
+        //            const (valores fixos)
+        //            var ()
+
+        // Escrever uma frase no meio do html
+        document.write(`Quer dizer que a sua matéria favorita é ${materia_favorita}`)
+        
+        let nota1 = Number(prompt("Informe a sua nota: "));
+        let nota2 = Number(prompt("Informe a sua nota: "));
+        let media = (nota1 + nota2)/2
+        
+        alert("Você está aprovado, parabéns!")
+        alert(`A sua média é de ${media}`)
+        if(media >= 5) {
+        }
+        else{
+            alerta("Você foi promovido a ver esse tema mais uma vez para atingir sua excelência, feliz ficarei em ve-lo novamente!")
+        }
+        
+        for(let i = 10; i > 0; i--){
+            document.write(`<br>${i}`)
+        }
+
+
+    </script>
+</body>
+</html>
